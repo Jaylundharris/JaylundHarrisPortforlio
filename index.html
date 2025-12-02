@@ -137,15 +137,23 @@
       margin-bottom: 0.5rem;
     }
 
-    .project a {
-      color: var(--accent-color);
-      text-decoration: none;
-      font-weight: bold;
-    }
+    .project-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent-color);
+  background: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
 
-    .project a:hover {
-      text-decoration: underline;
-    }
+.project-link:hover {
+  background: transparent;
+  color: var(--accent-color);
+}
 
     ul {
       padding-left: 1.2rem;
@@ -175,10 +183,12 @@
       <div class="profile">
         <img src="1761837164990.jpg" alt="Headshot of Jaylund Harris" class="profile-photo" />
         <div>
-          <h1>Jaylund Harris</h1>
-          <p>Operations-Focused Data Analyst • SQL • Python • Power BI</p>
-        </div>
-      </div>
+  <h1>Jaylund Harris</h1>
+  <p>Operations-Focused Data Analyst • SQL • Python • Power BI</p>
+  <p style="color: var(--muted-text); font-size: 0.95rem;">
+    Milner, GA • Open to Remote & Relocation
+  </p>
+</div>
 
       <nav>
         <a href="#about">About</a>
@@ -186,7 +196,8 @@
         <a href="#certifications">Certifications</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <button class="theme-toggle" type="button" onclick="toggleTheme()">🌙 / ☀️</button>
+        <button class="theme-toggle" type="button" onclick="toggleTheme()">Toggle Theme 🌗</button>
+
       </nav>
     </div>
   </header>
@@ -209,23 +220,26 @@
     <h3>📊 Sports Betting Analytics Project</h3>
     <p>A complete ETL + analysis workflow including data cleaning, SQL queries, Power BI dashboards, and insights for
       player performance trends.</p>
-    <a href="https://github.com/Jaylundharris/Nfl-Sports-Betting-Analytics" target="_blank">View Project</a>
-  </div>
+    <a href="https://github.com/Jaylundharris/Nfl-Sports-Betting-Analytics" 
+   target="_blank" 
+   class="project-link">View Project</a>
 
   <div class="project">
     <h3>✈️ Airline Customer Engagement Analysis</h3>
     <p>Analyzed customer behavior to identify churn risks, loyalty opportunities, and revenue insights using Python +
       SQL.</p>
-    <a href="https://github.com/Jaylundharris/Airline-Customer-Engagement-Loyalty-Project" target="_blank">View Project</a>
-  </div>
+    <a href="https://github.com/Jaylundharris/Airline-Customer-Engagement-Analysis" 
+   target="_blank" 
+   class="project-link">View Project</a>
+
 
   <div class="project">
     <h3>🛒 E-commerce Operational Analytics</h3>
     <p>Built a full database from scratch and delivered KPIs for revenue, repeat purchase behavior, and fulfillment
       efficiency.</p>
-    <a href="https://github.com/Jaylundharris/Ecommerce-Ops-Analytics" target="_blank">View Project</a>
-  </div>
-</section>
+    <a href="https://github.com/Jaylundharris/Ecommerce-Ops-Analytics" 
+   target="_blank" 
+   class="project-link">View Project</a>
 
 
     <section id="certifications">
@@ -279,5 +293,6 @@
   </script>
 </body>
 </html>
+
 
 
