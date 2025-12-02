@@ -152,24 +152,29 @@
     </section>
   </div>
 
-  <footer>
+ <footer>
     © 2025 Jaylund Harris — Portfolio Website
   </footer>
-	(function() {
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'light') {
-document.documentElement.setAttribute('data-theme', 'light');
-}
-})();
-function toggleTheme() {
-const current = document.documentElement.getAttribute('data-theme');
-if (current === 'light') {
-document.documentElement.removeAttribute('data-theme');
-localStorage.setItem('theme', 'dark');
-} else {
-document.documentElement.setAttribute('data-theme', 'light');
-localStorage.setItem('theme', 'light');
-}
-}
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      if (current === 'light') {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+  </script>
 </body>
 </html>
+
