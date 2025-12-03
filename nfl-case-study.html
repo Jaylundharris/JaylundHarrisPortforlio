@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NFL Team Performance Analytics Case Study | Jaylund Harris</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0d0d0d;
+      color: #f5f5f5;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+    a {
+      color: #4dabf7;
+    }
+    h1, h2 {
+      color: #4dabf7;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .hero-img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #333;
+      margin-bottom: 1.5rem;
+    }
+    .section {
+      margin-bottom: 1.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+
+    <h1>NFL Team Performance Analytics — Case Study</h1>
+    <p><strong>Role:</strong> Sports Data Analyst (Personal Project)</p>
+    <p><strong>Tools:</strong> Python, Pandas, SQL, SQLite, Power BI</p>
+
+    <img src="sports-betting-dashboard.png" alt="NFL Team Performance Dashboard" class="hero-img" />
+
+    <div class="section">
+      <h2>Question</h2>
+      <p>
+        The goal of this project was to understand long-term NFL team performance through win rates and scoring trends.
+        I wanted to answer questions like: How do home and away win rates differ by team? Which teams historically
+        overperform as favorites or underdogs? Are there clear patterns in margin of victory over time?
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Data &amp; Modeling</h2>
+      <p>
+        I worked with a historical NFL dataset containing game-level results by team and season. Using Python and Pandas,
+        I cleaned and reshaped the data to a team–season structure and then loaded it into a SQLite database for querying.
+      </p>
+      <p>
+        The main fields included:
+      </p>
+      <ul>
+        <li>Team, opponent, season, and game location (home/away/neutral)</li>
+        <li>Final scores and margin of victory</li>
+        <li>Favorite/underdog indicator and closing spread</li>
+        <li>Game result (win/loss/push)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Analysis &amp; Metrics</h2>
+      <p>
+        Using SQL and Python, I engineered metrics at the team level to evaluate historical performance:
+      </p>
+      <ul>
+        <li>Total games played by team and season</li>
+        <li>Home win rate vs. away win rate</li>
+        <li>Favorite win rate and underdog win rate</li>
+        <li>Average and total margin of victory</li>
+        <li>Seasonal trends in home/away performance over time</li>
+      </ul>
+      <p>
+        These metrics were then brought into Power BI to build interactive dashboards
+        with slicers for team and season.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Key Insights</h2>
+      <ul>
+        <li>
+          Several teams exhibited strong long-term home-field advantage, with home win rates significantly higher than
+          away win rates, while others were more balanced or even performed better on the road.
+        </li>
+        <li>
+          Favorite and underdog win rates varied meaningfully by franchise, highlighting teams that historically
+          outperformed expectations as underdogs.
+        </li>
+        <li>
+          Margin-of-victory trends over time showed periods of dominance and decline for specific teams, helping
+          contextualize how a franchise’s performance has changed across eras.
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Outcome</h2>
+      <p>
+        This project demonstrates my ability to clean and model sports data, engineer performance metrics, and build
+        dashboards that surface meaningful trends for decision-making. The same approach can apply to betting strategy,
+        team analysis, or internal reporting for sports organizations.
+      </p>
+    </div>
+
+    <div class="section">
+      <p>
+        View the full project on GitHub:
+        <a href="https://github.com/Jaylundharris/Nfl-Sports-Betting-Analytics" target="_blank">
+          Nfl-Sports-Betting-Analytics
+        </a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
