@@ -6,6 +6,28 @@
   <title>Jaylund Harris Portfolio</title>
   <link rel="icon" type="image/png" href="favicon.png" />
   <style>
+    /* Back to Top Button */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  font-size: 1rem;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent-color);
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+#backToTop:hover {
+  opacity: 1;
+}
+
     html {
       scroll-behavior: smooth;
     }
@@ -217,6 +239,7 @@
     }
   </style>
 </head>
+  
 
 <body>
   <header>
@@ -370,8 +393,25 @@
       }
     }
   </script>
+  <button id="backToTop" title="Go to top">↑ Top</button>
+<script>
+window.onscroll = function() {
+  let btn = document.getElementById("backToTop");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+document.getElementById("backToTop").onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+</script>
+
 </body>
 </html>
+
 
 
 
