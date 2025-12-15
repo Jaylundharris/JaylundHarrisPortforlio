@@ -137,6 +137,20 @@
     .theme-toggle:hover {
       background: var(--card-bg);
     }
+    .more-btn {
+  margin: 1rem 0 2rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.more-btn:hover {
+  border-color: var(--accent-color);
+}
 
     .resume-btn {
       display: inline-block;
@@ -301,9 +315,7 @@
     <!-- Projects -->
     <section id="projects">
       <h2 class="section-title">Projects</h2>
-    <button class="more-btn" id="moreBtn" onclick="toggleMoreProjects()">
-  Show More Projects
-</button>
+    
 
 
       <div class="project">
@@ -377,7 +389,9 @@
         </a>
       </div>
     <div id="moreProjects" style="display:none;">
-
+<button class="more-btn" id="moreBtn" onclick="toggleMoreProjects()">
+  Show More Projects
+</button>
       <!-- Airline Project -->
       <div class="project">
         <img
@@ -555,6 +569,18 @@
         localStorage.setItem('theme', 'light');
       }
     }
+function toggleMoreProjects() {
+  const more = document.getElementById("moreProjects");
+  const btn = document.getElementById("moreBtn");
+
+  if (more.style.display === "none") {
+    more.style.display = "block";
+    btn.textContent = "Show Less Projects";
+  } else {
+    more.style.display = "none";
+    btn.textContent = "Show More Projects";
+  }
+}
 
   </script>
   <button id="backToTop" title="Go to top">↑ Top</button>
@@ -575,6 +601,7 @@ document.getElementById("backToTop").onclick = function() {
 
 </body>
 </html>
+
 
 
 
